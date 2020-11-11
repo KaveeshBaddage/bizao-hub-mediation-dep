@@ -83,6 +83,15 @@ public class OriginatingCountryCalculatorIDD extends OriginatingCountryCalculato
     public static String oparatorOnHeaderRegEx = null;
     public static String oparatorOnHeaderMCC = null;
 
+    private boolean ignoreMSISDNFormatValidation;
+
+    public OriginatingCountryCalculatorIDD () {
+
+    }
+
+    public OriginatingCountryCalculatorIDD (boolean ignoreMSISDNFormatValidation) {
+        this.ignoreMSISDNFormatValidation = ignoreMSISDNFormatValidation;
+    }
 
     public OriginatingCountryCalculatorIDD() {
 
